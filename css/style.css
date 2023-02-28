@@ -333,8 +333,9 @@ h2#banner{
         width: 100% !important;
     }
     #banner h1{
-        font-family: pickleweasel;
         text-align: center;
-        text-transform: uppercase;
+    }
+    h2#banner{
+        text-align: center;
     }
 }
