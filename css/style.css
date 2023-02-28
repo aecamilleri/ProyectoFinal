@@ -21,6 +21,7 @@ body{
     right: 0;
     position: relative;
     top: 40%!important;
+    min-height: 20em!important;
 }
 .category01--home h4, .category02--home h4 {
     text-align: center;
@@ -64,7 +65,12 @@ body{
     background-position-x: center;
 }
 .pic04{
-    background: url("https://cdn.shopify.com/s/files/1/1671/3937/files/360x760_01_e2f235f6-eeed-4a67-bbb0-19bd977d9031.jpg?v=1613677287");
+    background: url("https://cdn.shopify.com/s/files/1/1671/3937/files/lb05.jpg?v=1613677281");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.pic05{
+    background: url("https://cdn.shopify.com/s/files/1/1671/3937/files/lb09.jpg?v=1613677281");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -350,6 +356,9 @@ h2#banner{
         }
     #promotions_Cards .card {
         width: 100% !important;
+    }
+    .pagination {
+        left: 10%;
     }
     #banner h1{
         text-align: center;
