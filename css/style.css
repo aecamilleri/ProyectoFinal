@@ -315,6 +315,10 @@ h2#banner{
 }
 
 @media only screen and (max-width: 576px) {
+    .carousel-caption{
+        text-align: center;
+        bottom: 5rem !important;
+    }
     .card {
         width: 48% !important;
     }
