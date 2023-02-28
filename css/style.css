@@ -282,6 +282,15 @@ border-radius: 50%!important;
     color: #000;
     font-size: xx-large;
 }
+h2#banner{
+    font-family: pickleweasel;
+    text-align: left;
+    text-transform: uppercase;
+    line-height: unset;
+    margin-bottom: 0px;
+    color: #000;
+    font-size: xx-large;
+}
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     color: #fff!important;
     background-color: #37474f !important;
