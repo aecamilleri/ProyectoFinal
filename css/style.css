@@ -315,7 +315,7 @@ border-radius: 50%!important;
     }
     #promotions_pills  .nav-pills .nav-link {
         margin: 2px!important;
-        min-width: 50%!important;
+        min-width: 120px!important;
     }
     #promotions_pills .nav-link  {
         font-size: small;
