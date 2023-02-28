@@ -3,10 +3,10 @@
     src: url('../fonts/pickleweasel.ttf'); 
 }
 *{
-     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
-     font-family: 'Bebas Neue';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue';
 }
 body{
     background: linear-gradient(to bottom, #E2E2E2, #C9D6FF);
@@ -341,4 +341,34 @@ h2#banner{
     .category {
         font-size: 1em;
     }
+    .slide-right {
+        -webkit-animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+    @-webkit-keyframes slide-left {
+    0% {
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
+    }
+    100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    }
+  }   
+    .slide-left {
+        -webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+  @-webkit-keyframes slide-right {
+    0% {
+      -webkit-transform: translateX(-100px);
+              transform: translateX(-100px);
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+
+ 
 }
