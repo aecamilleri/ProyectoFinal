@@ -301,7 +301,7 @@ h2#banner{
 
 @media only screen and (max-width: 576px) {
     .card {
-        width: 50% !important;
+        width: 48% !important;
     }
     .thumbInfo h4 {
     margin-bottom: 5em;
@@ -337,5 +337,8 @@ h2#banner{
     }
     h2#banner{
         text-align: center;
+    }
+    .category {
+        font-size: 1em;
     }
 }
