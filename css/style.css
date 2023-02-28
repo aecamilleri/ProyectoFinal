@@ -14,6 +14,35 @@ body{
 .bg-secundary-color{
     background-color: #327bc7;
 }
+.br-policy {
+    overflow: hidden;
+}
+.br-policy .br-policy__item_engo {
+    width: 25%!important;
+    float: left;
+    text-align: center;
+}
+.br-car:before {
+    content: url(../img/delivery.png);
+    filter: invert(1);
+}
+.br-money:before {
+    content: url(../img/money.png);
+    filter: invert(1);
+}
+.br-clock:before {
+    content: url(../img/clock.png);
+    filter: invert(1);
+}
+.br-satisf:before {
+    content: url(../img/like.png);
+    filter: invert(1);
+}
+.br-policy__icon {
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 20px;
+}
 .br-card {
     text-align: center;
     padding: 15px 15px 0;
@@ -30,8 +59,8 @@ body{
 }
 .category01--home button, .category02--home button {
     color: #fff;
-    background-color: #3ba9e0;
-    border-color: transparent;
+    background-color: #1e88e5;
+    border: solid 2px #fff;
     min-width: 130px;
     letter-spacing: 1px;
     border-radius: 5px;
@@ -40,7 +69,6 @@ body{
     text-align: center;
     vertical-align: middle;
     cursor: pointer;
-    border: 1px solid transparent;
     white-space: nowrap;
     padding: 10px 20px;
     font-size: 14px;
@@ -330,6 +358,10 @@ h2#banner{
     }
     .thumbInfo h4 {
     margin-bottom: 5em;
+    }
+    .br-policy .br-policy__item_engo {
+        width: 100%!important;
+        margin: 30px 0px;
     }
     .rightBorder {
     border-right: none;
