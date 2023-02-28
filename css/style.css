@@ -119,8 +119,6 @@ body{
 .name:hover {
     cursor: pointer;
 }
-
-
 .thumbInfo {
     padding-left: 30px;
     text-align: center;
@@ -160,6 +158,23 @@ body{
 
 .carousel-caption{
     text-align: left;
+    bottom: 15rem !important;
+}
+h1#slide-01, h1#slide-02, h1#slide-03 {
+    color: #000;
+    font-size: -webkit-xxx-large;
+/*    font-family: pickleweasel;*/
+    text-shadow: rgb(255, 255, 255) 2px 0px 0px, rgb(255, 255, 255) 1.75517px 0.958851px 0px, rgb(255, 255, 255) 1.0806px 1.68294px 0px, rgb(255, 255, 255) 0.141474px 1.99499px 0px, rgb(255, 255, 255) -0.832294px 1.81859px 0px, rgb(255, 255, 255) -1.60229px 1.19694px 0px, rgb(255, 255, 255) -1.97998px 0.28224px 0px, rgb(255, 255, 255) -1.87291px -0.701566px 0px, rgb(255, 255, 255) -1.30729px -1.5136px 0px, rgb(255, 255, 255) -0.421592px -1.95506px 0px, rgb(255, 255, 255) 0.567324px -1.91785px 0px, rgb(255, 255, 255) 1.41734px -1.41108px 0px, rgb(255, 255, 255) 1.92034px -0.558831px 0px;
+}
+p#slide-01, p#slide-02, p#slide-03 {
+    color: #1e88e5;
+    font-size: xx-large;
+    text-shadow: rgb(255 255 255) 2px 0px 0px, rgb(255 255 255) 1.75517px 0.958851px 0px, rgb(255 255 255) 1.0806px 1.68294px 0px, rgb(255 255 255) 0.141474px 1.99499px 0px, rgb(255 255 255) -0.832294px 1.81859px 0px, rgb(255 255 255) -1.60229px 1.19694px 0px, rgb(255 255 255) -1.97998px 0.28224px 0px, rgb(255 255 255) -1.87291px -0.701566px 0px, rgb(255 255 255) -1.30729px -1.5136px 0px, rgb(255 255 255) -0.421592px -1.95506px 0px, rgb(255 255 255) 0.567324px -1.91785px 0px, rgb(255 255 255) 1.41734px -1.41108px 0px, rgb(255 255 255) 1.92034px -0.558831px 0px;
+}
+a.slide01, a.slide02, a.slide03 {
+    background-color: #1e88e5 !important ;
+    border: 2px solid #fff !important ;
+    color:#fff !important;
 }
 .price .btn{
 border-radius: 50%!important;
@@ -345,7 +360,7 @@ h2#banner{
         -webkit-animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
                 animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
-    @-webkit-keyframes slide-left {
+    @keyframes slide-left {
     0% {
     -webkit-transform: translateX(100px);
     transform: translateX(100px);
@@ -354,21 +369,19 @@ h2#banner{
     -webkit-transform: translateX(0);
     transform: translateX(0);
     }
-  }   
+    }   
     .slide-left {
         -webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
                 animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
-  @-webkit-keyframes slide-right {
+    @keyframes slide-right {
     0% {
-      -webkit-transform: translateX(-100px);
-              transform: translateX(-100px);
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
     }
     100% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
     }
-  }
-
- 
+    }
 }
