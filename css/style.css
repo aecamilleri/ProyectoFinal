@@ -79,7 +79,8 @@ body{
 .category01--home h4, .category02--home h4 {
     text-align: center;
     font-size: xx-large;
-    color: cyan;
+    color: #1e88e5;
+    text-shadow: rgb(255 255 255) 2px 0px 0px, rgb(255 255 255) 1.75517px 0.958851px 0px, rgb(255 255 255) 1.0806px 1.68294px 0px, rgb(255 255 255) 0.141474px 1.99499px 0px, rgb(255 255 255) -0.832294px 1.81859px 0px, rgb(255 255 255) -1.60229px 1.19694px 0px, rgb(255 255 255) -1.97998px 0.28224px 0px, rgb(255 255 255) -1.87291px -0.701566px 0px, rgb(255 255 255) -1.30729px -1.5136px 0px, rgb(255 255 255) -0.421592px -1.95506px 0px, rgb(255 255 255) 0.567324px -1.91785px 0px, rgb(255 255 255) 1.41734px -1.41108px 0px, rgb(255 255 255) 1.92034px -0.558831px 0px;
 }
 .category01--home button, .category02--home button {
     color: #fff;
@@ -100,29 +101,29 @@ body{
 }
 /*******background Images*********************/
 .pic01{
-    background: url("https://cdn.shopify.com/s/files/1/1671/3937/files/360x760_02_031d8941-a69b-42b4-aa42-c3eb85800058.jpg?v=1613677287");
+    background: url("../img/Shirt_Women_Home.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 .pic02{
-    background: url("https://cdn.shopify.com/s/files/1/1671/3937/files/360x760_01_e2f235f6-eeed-4a67-bbb0-19bd977d9031.jpg?v=1613677287");
+    background: url("../img/Shirt_Men_Home.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 .pic03{
-    background: url("https://cdn.shopify.com/s/files/1/1671/3937/files/lb08.jpg?v=1613677281");
+    background: url("../img/Shirt_Rock_Home.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: top;
     background-position-x: center;
 }
 .pic04{
-    background: url("https://cdn.shopify.com/s/files/1/1671/3937/files/lb05.jpg?v=1613677281");
+    background: url("../img/Shirt_Retro_Home.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 .pic05{
-    background: url("https://cdn.shopify.com/s/files/1/1671/3937/files/lb09.jpg?v=1613677281");
+    background: url("../img/Shirt_Series_Home.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
