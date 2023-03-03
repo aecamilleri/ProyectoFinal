@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="container-fluid bg-body-tertiary sticky-top p-3 shadow">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/logo.svg" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav mx-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Categorias
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Shirt-music.html">Remeras Música</a></li>
+                            <li><a class="dropdown-item" href="Shirt-movies.html">Remeras Películas</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="AllProducts.html">Catálogo</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="Promotions.html">Promociones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Sizes.html">Talles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact.html">Contacto</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+            </div>
+        </nav> 
+    </div>
+</header> 
+<div class="container-fluid bg-banner">
+    <div class="container py-3 py-sm-4 px-4 px-sm-5" id="banner">
+        <h1>Catalogo</h1>
+    </div>
+</div>
+<div class="container px-3 px-md-5">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Música</li>
+        </ol>
+    </nav>
+    <div class="d-flex align-items-start flex-column flex-md-row">
+        <div class="nav flex-row flex-md-column d-flex m-auto m-md-0 nav-pills mb-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <button class="nav-link active" id="v-pills-musica-tab" data-bs-toggle="pill" data-bs-target="#v-pills-musica" type="button" role="tab" aria-controls="v-pills-musica" aria-selected="true">Música</button>
+            <button class="nav-link" id="v-pills-peliculas-tab" data-bs-toggle="pill" data-bs-target="#v-pills-peliculas" type="button" role="tab" aria-controls="v-pills-peliculas" aria-selected="false">Películas</button>
+            <button class="nav-link" id="v-pills-retro-tab" data-bs-toggle="pill" data-bs-target="#v-pills-retro" type="button" role="tab" aria-controls="v-pills-retro" aria-selected="false" retro>Retro</button>
+            <button class="nav-link" id="v-pills-series-tab" data-bs-toggle="pill" data-bs-target="#v-pills-series" type="button" role="tab" aria-controls="v-pills-infantiles" aria-selected="false">Series</button>
+        </div>
+        <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="v-pills-musica" role="tabpanel" aria-labelledby="v-pills-musica-tab" tabindex="0">
+                <div class="d-flex flex-wrap justify-content-around">
+                    <div class="card mb-3">
+                        <div class="card-image">
+                            <a href="" data-bs-toggle="modal" data-bs-target="#REMERA_BTTF"><img src="../img/remeras/Musica/Shirt01.png" alt="..."></a>
+                        </div>
+                        <div class="category">REMERA BTTF</div>
+                        <div class="price" style="float: right;">
+                            <div class="heading d-inline">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#REMERA_BTTF">
+                                    +
+                                </button> $6.000 
+                            </div>
+                            <!-- Button trigger modal -->
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="REMERA_BTTF" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">REMERA BTTF</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="card-image">
+                                            <img src="../img/remeras/musica/Shirt01.png" alt="...">
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <h3>$6.000</h3>
+                                    <button type="button" class="btn btn-primary">Comprar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-image">
+                            <a href="" data-bs-toggle="modal" data-bs-target="#REMERA_IRONFORT"><img src="../img/remeras/musica/Shirt02.png" alt="..."></a>
+                        </div>
+                        <div class="category">REMERA IRONFORT</div>
+                        <div class="price" style="float: right;">
+                            <div class="heading d-inline">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#REMERA_IRONFORT">
+                                    +
+                                </button> $6.000 
+                            </div>
+                            <!-- Button trigger modal -->
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="REMERA_IRONFORT" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">REMERA IRONFORT</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="card-image">
+                                            <img src="../img/remeras/musica/Shirt02.png" alt="...">
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <h3>$6.000</h3>
+                                    <button type="button" class="btn btn-primary">Comprar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-image">
+                            <a href="" data-bs-toggle="modal" data-bs-target="#REMERA_GARRISON"><img src="../img/remeras/musica/Shirt03.png" alt="..."></a>
+                        </div>
+                        <div class="category">REMERA GARRISON</div>
+                        <div class="price" style="float: right;">
+                            <div class="heading d-inline">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#REMERA_GARRISON">
+                                    +
+                                </button> $6.000 
+                            </div>
+                            <!-- Button trigger modal -->
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="REMERA_GARRISON" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">REMERA GARRISON</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="card-image">
+                                            <img src="../img/remeras/musica/Shirt03.png" alt="...">
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <h3>$6.000</h3>
+                                    <button type="button" class="btn btn-primary">Comprar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-image">
+                            <a href="" data-bs-toggle="modal" data-bs-target="#REMERA_INMUNDO_ANIMAL"><img src="../img/remeras/musica/Shirt04.png" alt="..."></a>
+                        </div>
+                        <div class="category">REMERA INMUNDO ANIMAL</div>
+                        <div class="price" style="float: right;">
+                            <div class="heading d-inline">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#REMERA_INMUNDO_ANIMAL">
+                                    +
+                                </button> $6.000 
+                            </div>
+                            <!-- Button trigger modal -->
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="REMERA_INMUNDO_ANIMAL" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">REMERA INMUNDO ANIMAL</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="card-image">
+                                            <img src="../img/remeras/musica/Shirt04.png" alt="...">
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <h3>$6.000</h3>
+                                    <button type="button" class="btn btn-primary">Comprar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-image">
+                            <a href="" data-bs-toggle="modal" data-bs-target="#REMERA_BROTHERS"><img src="../img/remeras/musica/Shirt05.png" alt="..."></a>
+                        </div>
+                        <div class="category">REMERA BROTHERS</div>
+                        <div class="price" style="float: right;">
+                            <div class="heading d-inline">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#REMERA_BROTHERS">
+                                    +
+                                </button> $6.000 
+                            </div>
+                            <!-- Button trigger modal -->
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="REMERA_BROTHERS" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">REMERA BROTHERS</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="card-image">
+                                            <img src="../img/remeras/musica/Shirt05.png" alt="...">
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <h3>$6.000</h3>
+                                    <button type="button" class="btn btn-primary">Comprar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-image">
+                            <a href="" data-bs-toggle="modal" data-bs-target="#REMERA_BABA_YAGA"><img src="../img/remeras/musica/Shirt06.png" alt="..."></a>
+                        </div>
+                        <div class="category">REMERA BABA YAGA</div>
+                        <div class="price" style="float: right;">
+                            <div class="heading d-inline">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#REMERA_BABA_YAGA">
+                                    +
+                                </button> $6.000 
+                            </div>
+                            <!-- Button trigger modal -->
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="REMERA_BABA_YAGA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">REMERA BABA YAGA</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="card-image">
+                                            <img src="../img/remeras/musica/Shirt06.png" alt="...">
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <h3>$6.000</h3>
+                                    <button type="button" class="btn btn-primary">Comprar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+                <div class="divisor m-4"></div>
+                <div class="pagination">
+                    <a href="#">&laquo;</a>
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">&raquo;</a>
+                </div>     
+            </div>
+            <div class="tab-pane fade" id="v-pills-peliculas" role="tabpanel" aria-labelledby="v-pills-peliculas-tab" tabindex="0">
+                <div class="tab-pane fade show active" id="v-pills-peliculas" role="tabpanel" aria-labelledby="v-pills-peliculas-tab" tabindex="0">
+                    <div class="d-flex flex-wrap justify-content-around">
+                        <div class="card mb-3">
+                            <div class="card-image">
+                                <a href="" data-bs-toggle="modal" data-bs-target="#REMERA_BAKER"><img src="../img/remeras/peliculas/Shirt07.png" alt="..."></a>
+                            </div>
+                            <div class="category">REMERA BAKER</div>
+                            <div class="price" style="float: right;">
+                                <div class="heading d-inline">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#REMERA_BAKER">
+                                        +
+                                    </button> $6.000 
+                                </div>
+                                <!-- Button trigger modal -->
+                            </div>
+                            <!-- Modal -->
+                            <div class="modal fade" id="REMERA_BAKER" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">REMERA BAKER</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="card-image">
+                                                <img src="../img/remeras/peliculas/Shirt07.png" alt="...">
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <h3>$6.000</h3>
+                                        <button type="button" class="btn btn-primary">Comprar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="card mb-3">
+                            <div class="card-image">
+                                <a href="" data-bs-toggle="modal" data-bs-target="#REMERA_MCFLY"><img src="../img/remeras/peliculas/Shirt08.png" alt="..."></a>
+                            </div>
+                            <div class="category">REMERA MCFLY</div>
+                            <div class="price" style="float: right;">
+                                <div class="heading d-inline">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#REMERA_MCFLY">
+                                        +
+                                    </button> $6.000 
+                                </div>
+                                <!-- Button trigger modal -->
+                            </div>
+                            <!-- Modal -->
+                            <div class="modal fade" id="REMERA_MCFLY" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">REMERA MCFLY</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="card-image">
+                                                <img src="../img/remeras/peliculas/Shirt08.png" alt="...">
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <h3>$6.000</h3>
+                                        <button type="button" class="btn btn-primary">Comprar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="card mb-3">
+                            <div class="card-image">
+                                <a href="" data-bs-toggle="modal" data-bs-target="#REMERA_815"><img src="../img/remeras/peliculas/Shirt09.png" alt="..."></a>
+                            </div>
+                            <div class="category">REMERA #815</div>
+                            <div class="price" style="float: right;">
+                                <div class="heading d-inline">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#REMERA_815">
+                                        +
+                                    </button> $6.000 
+                                </div>
+                                <!-- Button trigger modal -->
+                            </div>
+                            <!-- Modal -->
+                            <div class="modal fade" id="REMERA_815" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">REMERA #815</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="card-image">
+                                                <img src="../img/remeras/peliculas/Shirt09.png" alt="...">
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <h3>$6.000</h3>
+                                        <button type="button" class="btn btn-primary">Comprar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="card mb-3">
+                            <div class="card-image">
+                                <a href="" data-bs-toggle="modal" data-bs-target="#REMERA_RETURNS"><img src="../img/remeras/peliculas/Shirt10.png" alt="..."></a>
+                            </div>
+                            <div class="category">REMERA RETURNS</div>
+                            <div class="price" style="float: right;">
+                                <div class="heading d-inline">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#REMERA_RETURNS">
+                                        +
+                                    </button> $6.000 
+                                </div>
+                                <!-- Button trigger modal -->
+                            </div>
+                            <!-- Modal -->
+                            <div class="modal fade" id="REMERA_RETURNS" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">REMERA RETURNS</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="card-image">
+                                                <img src="../img/remeras/peliculas/Shirt10.png" alt="...">
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <h3>$6.000</h3>
+                                        <button type="button" class="btn btn-primary">Comprar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="card mb-3">
+                            <div class="card-image">
+                                <a href="" data-bs-toggle="modal" data-bs-target="#REMERA_MILES"><img src="../img/remeras/peliculas/Shirt11.png" alt="..."></a>
+                            </div>
+                            <div class="category">REMERA MILES</div>
+                            <div class="price" style="float: right;">
+                                <div class="heading d-inline">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#REMERA_MILES">
+                                        +
+                                    </button> $6.000 
+                                </div>
+                                <!-- Button trigger modal -->
+                            </div>
+                            <!-- Modal -->
+                            <div class="modal fade" id="REMERA_MILES" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">REMERA MILES</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="card-image">
+                                                <img src="../img/remeras/peliculas/Shirt11.png" alt="...">
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <h3>$6.000</h3>
+                                        <button type="button" class="btn btn-primary">Comprar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="card mb-3">
+                            <div class="card-image">
+                                <a href="" data-bs-toggle="modal" data-bs-target="#REMERA_BLESSED"><img src="../img/remeras/peliculas/Shirt12.png" alt="..."></a>
+                            </div>
+                            <div class="category">REMERA BLESSED</div>
+                            <div class="price" style="float: right;">
+                                <div class="heading d-inline">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#REMERA_BLESSED">
+                                        +
+                                    </button> $6.000 
+                                </div>
+                                <!-- Button trigger modal -->
+                            </div>
+                            <!-- Modal -->
+                            <div class="modal fade" id="REMERA_BLESSED" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">REMERA BLESSED</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="card-image">
+                                                <img src="../img/remeras/peliculas/Shirt12.png" alt="...">
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <h3>$6.000</h3>
+                                        <button type="button" class="btn btn-primary">Comprar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="divisor m-4"></div>
+                    <div class="pagination">
+                        <a href="#">&laquo;</a>
+                        <a href="#" class="active">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">6</a>
+                        <a href="#">&raquo;</a>
+                    </div>     
+                </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-retro" role="tabpanel" aria-labelledby="v-pills-retro-tab" tabindex="0">
+                <div class="tab-pane fade show active" id="v-pills-retro" role="tabpanel" aria-labelledby="v-pills-retro-tab" tabindex="0">
+                    <div class="d-flex flex-wrap justify-content-around">
+                        <div class="card mb-3">
+                            <div class="card-image">
+                                <a href="" data-bs-toggle="modal" data-bs-target="#WINROCKYWIN"><img src="../img/remeras/retro/Shirt13.png" alt="..."></a>
+                            </div>
+                            <div class="category">WINROCKYWIN</div>
+                            <div class="price" style="float: right;">
+                                <div class="heading d-inline">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#WINROCKYWIN">
+                                        +
+                                    </button> $6.000 
+                                </div>
+                                <!-- Button trigger modal -->
+                            </div>
+                            <!-- Modal -->
+                            <div class="modal fade" id="WINROCKYWIN" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">WINROCKYWIN</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="card-image">
+                                                <img src="../img/remeras/retro/Shirt13.png" alt="...">
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <h3>$6.000</h3>
+                                        <button type="button" class="btn btn-primary">Comprar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="card mb-3">
+                            <div class="card-image">
+                                <a href="" data-bs-toggle="modal" data-bs-target="#INDY_JONES"><img src="../img/remeras/retro/Shirt14.png" alt="..."></a>
+                            </div>
+                            <div class="category">INDY_JONES</div>
+                            <div class="price" style="float: right;">
+                                <div class="heading d-inline">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#INDY_JONES">
+                                        +
+                                    </button> $6.000 
+                                </div>
+                                <!-- Button trigger modal -->
+                            </div>
+                            <!-- Modal -->
+                            <div class="modal fade" id="INDY_JONES" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">INDY_JONES</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="card-image">
+                                                <img src="../img/remeras/retro/Shirt14.png" alt="...">
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <h3>$6.000</h3>
+                                        <button type="button" class="btn btn-primary">Comprar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="card mb-3">
+                            <div class="card-image">
+                                <a href="" data-bs-toggle="modal" data-bs-target="#FUCK_SUMMER"><img src="../img/remeras/retro/Shirt15.png" alt="..."></a>
+                            </div>
+                            <div class="category">FUCK SUMMER</div>
+                            <div class="price" style="float: right;">
+                                <div class="heading d-inline">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#FUCK_SUMMER">
+                                        +
+                                    </button> $6.000 
+                                </div>
+                                <!-- Button trigger modal -->
+                            </div>
+                            <!-- Modal -->
+                            <div class="modal fade" id="FUCK_SUMMER" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">FUCK SUMMER</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="card-image">
+                                                <img src="../img/remeras/retro/Shirt15.png" alt="...">
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <h3>$6.000</h3>
+                                        <button type="button" class="btn btn-primary">Comprar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="card mb-3">
+                            <div class="card-image">
+                                <a href="" data-bs-toggle="modal" data-bs-target="#MICHAEL_SCOTT"><img src="../img/remeras/retro/Shirt16.png" alt="..."></a>
+                            </div>
+                            <div class="category">MICHAEL SCOTT</div>
+                            <div class="price" style="float: right;">
+                                <div class="heading d-inline">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#MICHAEL_SCOTT">
+                                        +
+                                    </button> $6.000 
+                                </div>
+                                <!-- Button trigger modal -->
+                            </div>
+                            <!-- Modal -->
+                            <div class="modal fade" id="MICHAEL_SCOTT" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">MICHAEL SCOTT</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="card-image">
+                                                <img src="../img/remeras/retro/Shirt16.png" alt="...">
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <h3>$6.000</h3>
+                                        <button type="button" class="btn btn-primary">Comprar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="card mb-3">
+                            <div class="card-image">
+                                <a href="" data-bs-toggle="modal" data-bs-target="#KILL_BILL"><img src="../img/remeras/retro/Shirt17.png" alt="..."></a>
+                            </div>
+                            <div class="category">KILL BILL</div>
+                            <div class="price" style="float: right;">
+                                <div class="heading d-inline">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#KILL_BILL">
+                                        +
+                                    </button> $6.000 
+                                </div>
+                                <!-- Button trigger modal -->
+                            </div>
+                            <!-- Modal -->
+                            <div class="modal fade" id="KILL_BILL" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">KILL BILL</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="card-image">
+                                                <img src="../img/remeras/retro/Shirt17.png" alt="...">
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <h3>$6.000</h3>
+                                        <button type="button" class="btn btn-primary">Comprar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="card mb-3">
+                            <div class="card-image">
+                                <a href="" data-bs-toggle="modal" data-bs-target="#STAR_TREK"><img src="../img/remeras/retro/Shirt18.png" alt="..."></a>
+                            </div>
+                            <div class="category">STAR TREK</div>
+                            <div class="price" style="float: right;">
+                                <div class="heading d-inline">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#STAR_TREK">
+                                        +
+                                    </button> $6.000 
+                                </div>
+                                <!-- Button trigger modal -->
+                            </div>
+                            <!-- Modal -->
+                            <div class="modal fade" id="STAR_TREK" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">STAR TREK</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="card-image">
+                                                <img src="../img/remeras/retro/Shirt18.png" alt="...">
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <h3>$6.000</h3>
+                                        <button type="button" class="btn btn-primary">Comprar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="divisor m-4"></div>
+                    <div class="pagination">
+                        <a href="#">&laquo;</a>
+                        <a href="#" class="active">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">6</a>
+                        <a href="#">&raquo;</a>
+                    </div>     
+                </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-series" role="tabpanel" aria-labelledby="v-pills-series-tab" tabindex="0">
+                <div class="tab-pane fade show active" id="v-pills-series" role="tabpanel" aria-labelledby="v-pills-series-tab" tabindex="0">
+                    <div class="d-flex flex-wrap justify-content-around">
+                        <div class="card mb-3">
+                            <div class="card-image">
+                                <a href="" data-bs-toggle="modal" data-bs-target="#WOLF_GOT"><img src="../img/remeras/series/Shirt19.png" alt="..."></a>
+                            </div>
+                            <div class="category">WOLF GOT</div>
+                            <div class="price" style="float: right;">
+                                <div class="heading d-inline">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#WOLF_GOT">
+                                        +
+                                    </button> $6.000 
+                                </div>
+                                <!-- Button trigger modal -->
+                            </div>
+                            <!-- Modal -->
+                            <div class="modal fade" id="WOLF_GOT" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">WOLF GOT</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="card-image">
+                                                <img src="../img/remeras/series/Shirt19.png" alt="...">
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <h3>$6.000</h3>
+                                        <button type="button" class="btn btn-primary">Comprar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="card mb-3">
+                            <div class="card-image">
+                                <a href="" data-bs-toggle="modal" data-bs-target="#REBEL_SW"><img src="../img/remeras/series/Shirt20.png" alt="..."></a>
+                            </div>
+                            <div class="category">REBEL SW</div>
+                            <div class="price" style="float: right;">
+                                <div class="heading d-inline">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#REBEL_SW">
+                                        +
+                                    </button> $6.000 
+                                </div>
+                                <!-- Button trigger modal -->
+                            </div>
+                            <!-- Modal -->
+                            <div class="modal fade" id="REBEL_SW" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">REBEL SW</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="card-image">
+                                                <img src="../img/remeras/series/Shirt20.png" alt="...">
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <h3>$6.000</h3>
+                                        <button type="button" class="btn btn-primary">Comprar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="card mb-3">
+                            <div class="card-image">
+                                <a href="" data-bs-toggle="modal" data-bs-target="#HOMERO_CHINATOWN"><img src="../img/remeras/series/Shirt21.png" alt="..."></a>
+                            </div>
+                            <div class="category">HOMERO CHINATOWN</div>
+                            <div class="price" style="float: right;">
+                                <div class="heading d-inline">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#HOMERO_CHINATOWN">
+                                        +
+                                    </button> $6.000 
+                                </div>
+                                <!-- Button trigger modal -->
+                            </div>
+                            <!-- Modal -->
+                            <div class="modal fade" id="HOMERO_CHINATOWN" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">HOMERO CHINATOWN</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="card-image">
+                                                <img src="../img/remeras/series/Shirt21.png" alt="...">
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <h3>$6.000</h3>
+                                        <button type="button" class="btn btn-primary">Comprar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="card mb-3">
+                            <div class="card-image">
+                                <a href="" data-bs-toggle="modal" data-bs-target="#WIZARD_LOR"><img src="../img/remeras/series/Shirt22.png" alt="..."></a>
+                            </div>
+                            <div class="category">WIZARD LOR</div>
+                            <div class="price" style="float: right;">
+                                <div class="heading d-inline">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#WIZARD_LOR">
+                                        +
+                                    </button> $6.000 
+                                </div>
+                                <!-- Button trigger modal -->
+                            </div>
+                            <!-- Modal -->
+                            <div class="modal fade" id="WIZARD_LOR" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">WIZARD LOR</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="card-image">
+                                                <img src="../img/remeras/series/Shirt22.png" alt="...">
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <h3>$6.000</h3>
+                                        <button type="button" class="btn btn-primary">Comprar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="card mb-3">
+                            <div class="card-image">
+                                <a href="" data-bs-toggle="modal" data-bs-target="#NEWYORK_TOKIO"><img src="../img/remeras/series/Shirt23.png" alt="..."></a>
+                            </div>
+                            <div class="category">NEWYORK TOKIO</div>
+                            <div class="price" style="float: right;">
+                                <div class="heading d-inline">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#NEWYORK_TOKIO">
+                                        +
+                                    </button> $6.000 
+                                </div>
+                                <!-- Button trigger modal -->
+                            </div>
+                            <!-- Modal -->
+                            <div class="modal fade" id="NEWYORK_TOKIO" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">NEWYORK TOKIO</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="card-image">
+                                                <img src="../img/remeras/series/Shirt23.png" alt="...">
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <h3>$6.000</h3>
+                                        <button type="button" class="btn btn-primary">Comprar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="card mb-3">
+                            <div class="card-image">
+                                <a href="" data-bs-toggle="modal" data-bs-target="#SEX_TAPE"><img src="../img/remeras/series/Shirt24.png" alt="..."></a>
+                            </div>
+                            <div class="category">SEX TAPE</div>
+                            <div class="price" style="float: right;">
+                                <div class="heading d-inline">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#SEX_TAPE">
+                                        +
+                                    </button> $6.000 
+                                </div>
+                                <!-- Button trigger modal -->
+                            </div>
+                            <!-- Modal -->
+                            <div class="modal fade" id="SEX_TAPE" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">SEX TAPE</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="card-image">
+                                                <img src="../img/remeras/series/Shirt24.png" alt="...">
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <h3>$6.000</h3>
+                                        <button type="button" class="btn btn-primary">Comprar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="divisor m-4"></div>
+                    <div class="pagination">
+                        <a href="#">&laquo;</a>
+                        <a href="#" class="active">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">6</a>
+                        <a href="#">&raquo;</a>
+                    </div>     
+                </div>
+            </div>
+        </div>
+    </div>
+</div>  
+<div class="container-fluid bg-dark mt-5 p-3">
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
+        <div class="col-sm-12 col-xl-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                <img src="../img/logo_white.svg" alt="">
+            </a>
+        </div>
+        <ul class="nav col-sm-12 col-xl-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-muted" href="#"><img src="../img/facebook_white.png" alt=""></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><img src="../img/instagram_white.png" alt=""></a></li>
+        </ul>
+        </footer>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
