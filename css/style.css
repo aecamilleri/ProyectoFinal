@@ -411,3 +411,14 @@ h2#banner {
     100% {
       -webkit-transform: translateX(0);
       transform: translateX(0); } } }
+
+
+#FaqsSection .accordion-button:not(.collapsed){
+  color: #ffffff !important;
+  background-color: #005b96 !important;
+}
+
+#FaqsSection button.accordion-button.collapsed{
+  color: #ffffff !important;
+  background-color: #6c757d !important;
+}
