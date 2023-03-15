@@ -1,0 +1,20 @@
+/***Carousel Style***/
+.carousel-caption{
+    text-align: left;
+    bottom: 15rem !important;
+    h1#slide-01, h1#slide-02, h1#slide-03 {
+        color: map-get($colorpallete, DarkBlack);
+        font-size: -webkit-xxx-large;
+        text-shadow: $BorderTitle
+    }
+    p#slide-01, p#slide-02, p#slide-03 {
+        color: map-get($colorpallete, PrimaryBlue);
+        font-size: xx-large;
+        text-shadow: $BorderTitle
+    }
+    a.slide01, a.slide02, a.slide03 {
+        background-color: map-get($colorpallete, PrimaryBlue) !important ;
+        border: 2px solid #fff !important ;
+        color:#fff !important;
+    }
+}

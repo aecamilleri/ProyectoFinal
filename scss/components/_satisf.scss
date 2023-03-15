@@ -1,0 +1,56 @@
+.bg-primary-color{
+    background-color: map-get($colorpallete, PrimaryBlue);
+}
+.br-policy {
+    overflow: hidden;
+    & .br-policy__item_engo {
+        width: 25%!important;
+        float: left;
+        text-align: center;
+        .br-policy__icon {
+            display: flex;
+            padding-right: 20px;
+            justify-content: center;
+            .br-car:before {
+                display: block;
+                content: "";
+                background: url(../img/delivery.webp) no-repeat;
+                background-position: center;
+                background-size: cover;
+                filter: invert(1);
+                height: 64px;
+                width: 64px;
+            }
+            .br-money:before {
+                display: block;
+                content: "";
+                background: url(../img/money.webp) no-repeat;
+                background-position: center;
+                background-size: cover;
+                filter: invert(1);
+                height: 64px;
+                width: 64px;
+            }
+            .br-clock:before {
+                display: block;
+                content: "";
+                background: url(../img/clock.webp) no-repeat;
+                background-position: center;
+                background-size: cover;
+                filter: invert(1);
+                height: 64px;
+                width: 64px;
+            }
+            .br-satisf:before {
+                display: block;
+                content: "";
+                background: url(../img/like.webp) no-repeat;
+                background-position: center;
+                background-size: cover;
+                filter: invert(1);
+                height: 64px;
+                width: 64px;
+            }
+        }
+    }
+}

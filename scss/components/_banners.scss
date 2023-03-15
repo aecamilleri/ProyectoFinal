@@ -1,0 +1,19 @@
+/***Titles***/
+#banner h1{
+    font-family: $FontTitle;
+    text-align: left;
+    text-transform: uppercase;
+    line-height: unset;
+    margin-bottom: 0px;
+    color: map-get($colorpallete, DarkBlack);
+    font-size: xx-large;
+}
+h2#banner{
+    font-family: $FontTitle;
+    text-align: left;
+    text-transform: uppercase;
+    line-height: unset;
+    margin-bottom: 0px;
+    color: map-get($colorpallete, DarkBlack);
+    font-size: xx-large;
+}

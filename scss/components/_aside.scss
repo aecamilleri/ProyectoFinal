@@ -1,0 +1,32 @@
+/***aside***/
+.br-card {
+    text-align: center;
+    padding: 15px 15px 0;
+    left: 0;
+    right: 0;
+    position: relative;
+    top: 40%!important;
+    min-height: 20em!important;
+    h4 {
+        text-align: center;
+        font-size: xx-large;
+        color: map-get($colorpallete, PrimaryBlue);
+        text-shadow: $BorderTitle
+    }
+    button {
+        color: #fff;
+        background-color: map-get($colorpallete, PrimaryBlue);
+        border: solid 2px #fff;
+        min-width: 130px;
+        letter-spacing: 1px;
+        border-radius: 5px;
+        font-weight: 700;
+        text-align: center;
+        vertical-align: middle;
+        cursor: pointer;
+        white-space: nowrap;
+        padding: 10px 20px;
+        font-size: 14px;
+        line-height: 1.71429;
+    }
+}

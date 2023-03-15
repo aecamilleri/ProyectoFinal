@@ -1,0 +1,23 @@
+/***nav-pills***/
+.nav-pills .nav-link {  /* border stand by button */
+    color: $NavPillsColor !important;
+    border: 1px solid !important;
+    margin: 0 10px!important;
+    min-width: 50px!important;
+        &.active{ /* style nave-pills page */
+            color: #fff!important;
+            background-color: $NavPillsColor !important;
+        }
+}
+.nav-pills .show>.nav-link { /* style nave-pills page */
+    color: #fff!important;
+    background-color: $NavPillsColor !important;
+}
+.btn.btn-link.text-start{   /* style catalogo page */
+    text-decoration: none!important;
+        &.active{
+            background: $NavPillsColor !important;
+            color:#fff !important;
+            text-decoration: none!important;
+        }
+    }

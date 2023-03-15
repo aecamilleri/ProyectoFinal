@@ -1,0 +1,35 @@
+/***Cards***/
+.card {
+    width: 30%;
+    background: transparent;
+    padding: 0em 1.5em 1.5em 1.5em;
+    border: none;
+    .card-image {
+        width: 100%;
+        border-radius: 6px 6px 0 0;
+        margin-bottom: 10px;
+            img{
+                    width: 100%;
+                    object-fit: cover; /* Recorta la imagen sin deformarla */
+                    object-position: center;
+                    border-radius: 6px 6px 0 0;
+                        &:hover {
+                            transform: scale(0.98);
+                        }
+                }    
+    }
+}
+.price .btn{
+    border-radius: 50%!important;
+    background-color: map-get($colorpallete, PrimaryBlue) !important;
+    border: none;
+    .heading {
+        font-weight: 600;
+        color: rgb(88, 87, 87);
+        padding: 7px;
+            &:hover {
+                cursor: pointer;
+            }
+            
+    }
+}

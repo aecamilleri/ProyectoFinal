@@ -1,0 +1,112 @@
+/***DarkMode***/
+// define themes
+html[data-theme="dark"] {
+    body{
+        color: #ffffff!important;
+        background-color: #212529!important;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1424%26quot%3b)' fill='none'%3e%3cpath d='M836.3 618.55C988.07 583.44 1018.8 201.3 1278.32 179.34 1537.84 157.38 1606.35 68.21 1720.34 67.34' stroke='rgba(51%2c121%2c194%2c0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M332.83 582.28C445.43 571.62 408.2 341.71 711.5 334.75 1014.8 327.79 1274.29 156.76 1468.85 155.55' stroke='rgba(51%2c121%2c194%2c0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M855.58 590.29C981.63 575.76 1059.66 296.28 1268.99 295.87 1478.31 295.46 1571.39 455.39 1682.39 458.27' stroke='rgba(51%2c121%2c194%2c0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M476.4 564.65C661.64 532.11 754.87 73.59 1045.3 72.37 1335.73 71.15 1458.19 324.06 1614.2 329.97' stroke='rgba(51%2c121%2c194%2c0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M393.5 638.27C583.92 600.88 673.3 116.03 966.49 114.6 1259.67 113.17 1380.8 382.04 1539.47 389' stroke='rgba(51%2c121%2c194%2c0.58)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1424'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+        header{
+            padding: 1rem!important;
+            background-color: #212529!important;
+            box-shadow: 0 .5rem 1rem rgba(255,255,255,.15)!important;
+                nav{
+                    background-color: #212529!important;
+                    img{
+                        filter: invert(1);
+                    }
+                    ul li a{
+                        color: #ffffff!important;  
+                        &.dropdown-item{
+                            color:#212529!important;                          ;
+                        }        
+                    }
+                }
+            }
+        h2#banner, #banner h1, 
+        li.breadcrumb-item, .breadcrumb-item+.breadcrumb-item::before,
+        .pagination a, .table
+        {
+            color: #ffffff!important;
+        }
+        .form-floating>label{
+            color: #212529!important;
+        }
+        div#footer{
+            border-top: #ffffff solid 3px;
+        }
+        div#contact{
+            background: none !important;
+            img{
+                filter: invert(1);
+            }
+        }
+        }
+}
+html[data-theme="light"] {
+    body{
+        background-image:  url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1001%26quot%3b)' fill='none'%3e%3cpath d='M282.98 602.64C407.51 598.37 509.16 403.81 739.88 403.49 970.6 403.17 968.33 473.49 1196.77 473.49 1425.22 473.49 1538.11 403.69 1653.67 403.49' stroke='rgba(51%2c121%2c194%2c0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M558.91 574.76C687.44 542.6 619.04 208.39 927.05 193.51 1235.05 178.63 1474.52 26.57 1663.32 25.51' stroke='rgba(51%2c121%2c194%2c0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M516.96 587.5C652.88 579.44 723.32 346.03 996.34 329.02 1269.35 312.01 1338.6 69.18 1475.71 60.22' stroke='rgba(51%2c121%2c194%2c0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M554.16 568.27C685.02 564.83 779.61 382.68 1041.15 375.89 1302.69 369.1 1397.46 188.83 1528.14 185.49' stroke='rgba(51%2c121%2c194%2c0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M599.86 669.49C689.51 668.73 674.1 582.12 946.71 578.32 1219.32 574.52 1457.32 346.29 1640.41 343.12' stroke='rgba(51%2c121%2c194%2c0.58)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1001'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    }
+}
+/***CSS for toggle***/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 68px;
+    height: 38px;
+    margin: 5px;
+    // hide checkbox
+    input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+}
+// outside
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: grey;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+@keyframes going-dark {
+    100% {
+    -webkit-transform: translateX(28px);
+    }
+}
+@keyframes going-light {
+    0% {
+    -webkit-transform: translateX(28px);
+    }
+    100% {
+    -webkit-transform: translateX(0px);
+    }
+}
+// slider in light state
+.slider:before {
+    position: absolute;
+    content: '';
+    height: 24px;
+    width: 24px;
+    left: 8px;
+    bottom: 7px;
+    background-color: white;
+    border-radius: 50%;
+    -webkit-animation: going-light 0.4s cubic-bezier(0.57, 1.52, 0.64, 1) normal;
+    -webkit-transition: 0.4s;
+    animation: going-light 0.4s cubic-bezier(0.57, 1.52, 0.64, 1) normal;
+    transition: 0.4s;
+}
+// slider in dark state
+input:checked + .slider:before {
+    background-color: white;
+    -webkit-animation: going-dark 0.4s cubic-bezier(0.57, 1.52, 0.64, 1) forwards;
+    -webkit-transition: all 0.4s;
+    animation: going-dark 0.4s cubic-bezier(0.57, 1.52, 0.64, 1) forwards;
+    transition: all 0.4s;
+}
