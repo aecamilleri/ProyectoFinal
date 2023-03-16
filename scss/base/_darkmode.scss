@@ -40,7 +40,12 @@ html[data-theme="dark"] {
                 filter: invert(1);
             }
         }
+        button.navbar-toggler {
+            color: #ffffff;
+            background-color: #ffffff;
+            border: solid #ffffff;
         }
+    }
 }
 html[data-theme="light"] {
     body{
