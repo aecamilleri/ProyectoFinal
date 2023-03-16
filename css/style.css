@@ -410,3 +410,8 @@ h2#banner {
     100% {
       -webkit-transform: translateX(0);
       transform: translateX(0); } } }
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .navbar-nav-scroll {
+    /* nav height on mobile view */
+    max-height: 35vh; } }

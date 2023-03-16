@@ -87,3 +87,9 @@
     }
     }
 }
+
+@media only (min-width: 577px) and (max-width: 768px) {
+    .navbar-nav-scroll { /* nav height on mobile view */
+        max-height: 35vh;
+        } 
+}
