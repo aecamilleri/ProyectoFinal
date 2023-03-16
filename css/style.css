@@ -344,6 +344,10 @@ h2#banner {
 
 /***Mobile***/
 @media only screen and (max-width: 576px) {
+  button.navbar-toggler {
+    color: #ffffff;
+    background-color: #ffffff;
+    border: solid #ffffff; }
   .carousel-caption {
     text-align: center;
     bottom: 5rem !important; }
@@ -371,11 +375,6 @@ h2#banner {
   .navbar-nav-scroll {
     /* nav height on mobile view */
     max-height: 35vh; }
-  /* 
-    .nav-pills .nav-link {
-        margin: 0 1px!important;
-        min-width: 50px!important;
-    }*/
   #promotions_pills .nav-pills .nav-link {
     margin: 2px !important;
     min-width: 160px !important; }
@@ -411,14 +410,3 @@ h2#banner {
     100% {
       -webkit-transform: translateX(0);
       transform: translateX(0); } } }
-
-
-#FaqsSection .accordion-button:not(.collapsed){
-  color: #ffffff !important;
-  background-color: #005b96 !important;
-}
-
-#FaqsSection button.accordion-button.collapsed{
-  color: #ffffff !important;
-  background-color: #6c757d !important;
-}
