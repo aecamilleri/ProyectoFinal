@@ -176,6 +176,8 @@ h2#banner {
       border-radius: 6px 6px 0 0; }
       .card .card-image img:hover {
         transform: scale(0.98); }
+  .card .category {
+    font-size: larger; }
 
 .price .btn {
   border-radius: 50% !important;
@@ -353,6 +355,8 @@ h2#banner {
     bottom: 5rem !important; }
   .card {
     width: 48% !important; }
+    .card .category {
+      font-size: small; }
   .thumbInfo h4 {
     margin-bottom: 5em; }
   .br-policy {
